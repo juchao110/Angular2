@@ -1,0 +1,13 @@
+<h1>
+    <header>
+        <ul>
+            <li *ngFor="let title of headList">
+                <a [routerLink]="[title.url,title.id]">{{title.name}}</a>
+            </li>
+        </ul>
+    </header>
+    
+    <div class="container main-container">
+        <router-outlet></router-outlet>
+    </div>
+</h1>
