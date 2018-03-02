@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     private headList=[
-        {"url":"home","name":"主页","id":1},
+        {"url":"home","name":"主页","id":'time'},
         {"url":"list","name":"列表","id":2},
     ];
 }

@@ -8,14 +8,16 @@ import {rootRouterConfig} from './app.router';
 import { AppComponent } from './app.component';
 import { ListComponent } from './list/list.component';
 import { ChildComponent } from './list/child.component';
-import { HomeComponent } from './home/home.component';
+// import { HomeComponent } from './home/home.component';
+// import { TimeComponent } from './time/time.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
     ChildComponent,
-    HomeComponent
+    // HomeComponent,
+    // TimeComponent
   ],
   imports: [
     BrowserModule,

@@ -5,7 +5,7 @@ import { HomeComponent } from './home/home.component';
 export const rootRouterConfig:Routes=[
     {
         path:'',
-        redirectTo:'/',
+        redirectTo:'home',
         pathMatch:'full'
     },
     {
@@ -13,7 +13,7 @@ export const rootRouterConfig:Routes=[
         component:ListComponent
     },
     {
-        path:'home/:id',
-        component:HomeComponent
+        path:'home',
+        loadChildren:'./home/home.module#HomeModule'
     }
 ]
