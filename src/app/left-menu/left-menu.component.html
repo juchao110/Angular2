@@ -1,0 +1,5 @@
+<div class="left_menu">
+    <ul>
+        <li *ngFor="let item of menuList;let i=index" (click)="goLink(item.url,i)" [ngClass]="{current:i==currentList}">{{item.name}}</li>
+    </ul>
+</div>

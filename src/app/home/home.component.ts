@@ -3,7 +3,8 @@ import { Component, ElementRef, Renderer, OnInit, Input, Output, EventEmitter } 
 
 @Component({
   selector: 'home-row',
-  templateUrl: './home.component.html'
+  templateUrl: './home.component.html',
+  styleUrls:['./home.component.sass']
 })
 export class HomeComponent implements OnInit {
   	ngOnInit() {

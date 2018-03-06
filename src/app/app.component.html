@@ -1,13 +1,12 @@
-<h1>
+<div class="my_angular">
     <header>
-        <ul>
-            <li *ngFor="let title of headList">
-                <a [routerLink]="[title.url,title.id]">{{title.name}}</a>
+        <ul class="clearfix">
+            <li *ngFor="let title of headList;let n=index" (click)="changeRoute(title.url,n)" [ngClass]="{on:n==currentIndex}">
+                {{title.name}}
             </li>
         </ul>
     </header>
-    
-    <div class="container main-container">
+    <div class="container">
         <router-outlet></router-outlet>
     </div>
-</h1>
+</div>
