@@ -10,7 +10,7 @@ import { ActivatedRoute, Router, Params } from '@angular/router';
 export class AppComponent {
     public headList=[
         {"url":"home","name":"买家"},
-        {"url":"list","name":"卖家"},
+        {"url":"sale","name":"卖家"},
     ];
     public currentIndex:number;
     constructor(

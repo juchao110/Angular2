@@ -1,5 +1,4 @@
 import { Routes } from "@angular/router";
-import { ListComponent } from './list/list.component';
 import { HomeComponent } from './home/home.component';
 
 export const rootRouterConfig:Routes=[
@@ -15,5 +14,9 @@ export const rootRouterConfig:Routes=[
     {
         path:'home',
         loadChildren:'./home/home.module#HomeModule'
+    },
+    {
+        path:'sale',
+        loadChildren:'./sale-center/sale-center.module#SaleCenterModule'
     }
 ]

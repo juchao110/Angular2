@@ -1,7 +1,15 @@
 <div>
-  <p>{{listName}}</p>
-  <label><input type="checkbox" [(ngModel)]="isShow">要显示隐藏的东西吗？</label>
-  <p *ngIf="isShow">我是被隐藏的</p>
-  <list-child [parentMessage]="message" (childMessage)="getMessage($event)"></list-child>
-  <p>这是子组件传来的信息：{{messageTwo}}</p>
+  <p>list</p>
+  <!-- <label><input type="checkbox" [(ngModel)]="isShow">要显示隐藏的东西吗？</label> -->
+  <!-- <p *ngIf="isShow">我是被隐藏的</p> -->
+  <!-- <list-child [parentMessage]="message" (childMessage)="getMessage($event)"></list-child> -->
+  <!-- <p>这是子组件传来的信息：{{messageTwo}}</p> -->
+  <ul>
+      <li *ngFor="let l of listData;let i=index" (click)="goDetail(l.id)">
+          {{i+1}}、{{l.content}}
+      </li>
+  </ul>
+  <div  *ngIf="newList">
+        <div *ngFor="let l of newList.data.lists" (click)="goDetail(l.custom_id)">{{l.custom_sn}}</div>
+  </div>
 </div>

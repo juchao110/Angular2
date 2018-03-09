@@ -23,7 +23,7 @@ export class ListItemComponent implements OnInit {
     constructor() { }
 
     ngOnInit() {
-
+        console.log("listItemPage")
     }
 
 }

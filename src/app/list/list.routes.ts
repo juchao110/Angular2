@@ -1,14 +1,20 @@
 import { RouterModule } from '@angular/router';
-import {ListItemComponent} from './list-item/list-item.component';
+import { ListDetailComponent } from './list-detail/list-detail.component';
+import { ListComponent } from './list.component';
 
 export const ListRoutes=[
     {
         path:'',
-        redirectTo:'items',
-        pathMatch:'full'
+        redirectTo:'list',
     },
     {
-        path:'items',
-        component:ListItemComponent,
+        path:'list',
+        component:ListComponent
+
+    },
+    {
+        path:'list/detail/:id',
+        component:ListDetailComponent
+
     }
 ]

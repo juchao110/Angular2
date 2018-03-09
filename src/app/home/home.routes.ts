@@ -1,7 +1,8 @@
 import { HomeComponent } from './home.component';
 import { TimeComponent } from '../time/time.component';
 import { RouterModule } from '@angular/router';
-import { InfoComponent } from '../info/info.component'
+import { InfoComponent } from '../info/info.component';
+import { ListItemComponent } from '../list/list-item/list-item.component';
 
 
 export const homeRoutes=[
@@ -11,7 +12,11 @@ export const homeRoutes=[
         children:[
             {
                 path:'',
-                loadChildren:'../list/list.module#ListModule'
+                redirectTo:'items',
+            },
+            {
+                path:'items',
+                component:ListItemComponent
             },
             {
                 path:'info',
